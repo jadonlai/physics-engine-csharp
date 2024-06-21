@@ -1,5 +1,3 @@
-using System;
-
 namespace Physics
 {
     public readonly struct Vector
@@ -14,36 +12,13 @@ namespace Physics
             this.Y = y;
         }
 
-        public static Vector operator +(Vector a, Vector b)
-        {
-            return new Vector(a.X + b.X, a.Y + b.Y);
-        }
+        public static Vector operator +(Vector a, Vector b) => new Vector(a.X + b.X, a.Y + b.Y);
+        public static Vector operator -(Vector a, Vector b) => new Vector(a.X - b.X, a.Y - b.Y);
+        public static Vector operator -(Vector v) => new Vector(-v.X, -v.Y);
+        public static Vector operator *(Vector v, float s) => new Vector(v.X * s, v.Y * s);
+        public static Vector operator /(Vector v, float s) => new Vector(v.X / s, v.Y / s);
 
-        public static Vector operator -(Vector a, Vector b)
-        {
-            return new Vector(a.X - b.X, a.Y - b.Y);
-        }
-
-        public static Vector operator -(Vector v)
-        {
-            return new Vector(-v.X, -v.Y);
-        }
-
-        public static Vector operator *(Vector v, float s)
-        {
-            return new Vector(v.X * s, v.Y * s);
-        }
-
-        public static Vector operator /(Vector v, float s)
-        {
-            return new Vector(v.X / s, v.Y / s);
-        }
-
-        public bool Equal(Vector other)
-        {
-            return this.X == other.X && this.Y == other.Y;
-        }
-
+        public bool Equal(Vector other) => this.X == other.X && this.Y == other.Y;
         public override bool Equals(object obj)
         {
             if (obj is Vector other)
@@ -54,14 +29,7 @@ namespace Physics
             return false;
         }
 
-        public override int GetHashCode()
-        {
-            return new { this.X, this.Y }.GetHashCode();
-        }
-
-        public override string ToString()
-        {
-            return $"({this.X}, {this.Y})";
-        }
+        public override int GetHashCode() => new { this.X, this.Y }.GetHashCode();
+        public override string ToString() => $"({this.X}, {this.Y})";
     }
 }
