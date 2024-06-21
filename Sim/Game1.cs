@@ -20,8 +20,10 @@ public class Game1 : Game
 
     public Game1()
     {
-        graphics = new GraphicsDeviceManager(this);
-        graphics.SynchronizeWithVerticalRetrace = true;
+        graphics = new GraphicsDeviceManager(this)
+        {
+            SynchronizeWithVerticalRetrace = true
+        };
         Content.RootDirectory = "Content";
         IsMouseVisible = true;
         IsFixedTimeStep = true;
@@ -60,8 +62,10 @@ public class Game1 : Game
         screen = new Screen(this, 1280, 768);
         sprites = new Sprites(this);
         shapes = new Shapes(this);
-        camera = new Camera(screen);
-        camera.Zoom = 5;
+        camera = new Camera(screen)
+        {
+            Zoom = 5
+        };
 
         base.Initialize();
     }
