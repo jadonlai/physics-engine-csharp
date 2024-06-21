@@ -44,7 +44,7 @@ namespace Physics
             return this.X == other.X && this.Y == other.Y;
         }
 
-        public override Equals(object obj)
+        public override bool Equals(object obj)
         {
             if (obj is Vector other)
             {
