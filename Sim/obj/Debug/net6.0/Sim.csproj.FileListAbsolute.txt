@@ -24,3 +24,7 @@
 /Users/jadon/Documents/GitHub/physics-engine/Sim/obj/Debug/net6.0/Sim.pdb
 /Users/jadon/Documents/GitHub/physics-engine/Sim/obj/Debug/net6.0/Sim.genruntimeconfig.cache
 /Users/jadon/Documents/GitHub/physics-engine/Sim/obj/Debug/net6.0/ref/Sim.dll
+/Users/jadon/Documents/GitHub/physics-engine/Sim/bin/Debug/net6.0/Flat.dll
+/Users/jadon/Documents/GitHub/physics-engine/Sim/bin/Debug/net6.0/Flat.pdb
+/Users/jadon/Documents/GitHub/physics-engine/Sim/bin/Debug/net6.0/Physics.dll
+/Users/jadon/Documents/GitHub/physics-engine/Sim/bin/Debug/net6.0/Physics.pdb
