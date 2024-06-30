@@ -7,6 +7,7 @@ using Flat;
 using Flat.Graphics;
 using Flat.Input;
 using Physics;
+using Microsoft.Xna.Framework.Graphics.PackedVector;
 
 namespace Sim;
 
@@ -17,6 +18,8 @@ public class Game1 : Game
     private Sprites sprites;
     private Shapes shapes;
     private Camera camera;
+
+    private Vector vectorA = new Vector(12f, 20f);
 
     public Game1()
     {
@@ -34,29 +37,6 @@ public class Game1 : Game
 
     protected override void Initialize()
     {
-        float x1 = 0.05f;
-        float y1 = 0.002f;
-        float x2 = 0.001f;
-        float y2 = 0.003f;
-
-        Vector a = new Vector(x1, y1);
-        Vector b = new Vector(x2, y2);
-
-        Stopwatch watch = new Stopwatch();
-
-        watch.Start();
-        for (int i = 0; i < 1_000_000; i++)
-        {
-            // x1 += x2;
-            // y1 += y2;
-            a += b;
-        }
-        watch.Stop();
-
-        // Console.WriteLine($"{x1}, {y1}");
-        Console.WriteLine($"{a.X}, {a.Y}");
-        Console.WriteLine($"Time: {watch.Elapsed.TotalMilliseconds}ms");
-
         FlatUtil.SetRelativeBackBufferSize(graphics, 0.5f);
 
         screen = new Screen(this, 1280, 768);
@@ -64,7 +44,7 @@ public class Game1 : Game
         shapes = new Shapes(this);
         camera = new Camera(screen)
         {
-            Zoom = 5
+            Zoom = 8
         };
 
         base.Initialize();
@@ -108,8 +88,12 @@ public class Game1 : Game
         screen.Set();
         GraphicsDevice.Clear(new Color(50, 60, 70));
 
+        Vector normalized = PhysicsMath.Normalize(vectorA);
+
         shapes.Begin(camera);
-        shapes.DrawCircle(0, 0, 32, 32, Color.White);
+        shapes.DrawCircle(Vector2.Zero, 1f, 24, Color.Blue);
+        shapes.DrawLine(Vector2.Zero, Converter.ToVector2(vectorA), Color.White);
+        shapes.DrawLine(Vector2.Zero, Converter.ToVector2(normalized), Color.Green);
         shapes.End();
 
         screen.Unset();
