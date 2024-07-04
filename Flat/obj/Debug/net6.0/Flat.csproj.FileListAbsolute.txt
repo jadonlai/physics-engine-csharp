@@ -11,3 +11,16 @@
 /Users/jadon/Documents/GitHub/physics-engine/Flat/obj/Debug/net6.0/refint/Flat.dll
 /Users/jadon/Documents/GitHub/physics-engine/Flat/obj/Debug/net6.0/Flat.pdb
 /Users/jadon/Documents/GitHub/physics-engine/Flat/obj/Debug/net6.0/ref/Flat.dll
+/Users/jadon/Documents/GitHub/physics-engine-csharp/Flat/bin/Debug/net6.0/Flat.deps.json
+/Users/jadon/Documents/GitHub/physics-engine-csharp/Flat/bin/Debug/net6.0/Flat.dll
+/Users/jadon/Documents/GitHub/physics-engine-csharp/Flat/bin/Debug/net6.0/Flat.pdb
+/Users/jadon/Documents/GitHub/physics-engine-csharp/Flat/obj/Debug/net6.0/Flat.csproj.AssemblyReference.cache
+/Users/jadon/Documents/GitHub/physics-engine-csharp/Flat/obj/Debug/net6.0/Flat.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jadon/Documents/GitHub/physics-engine-csharp/Flat/obj/Debug/net6.0/Flat.AssemblyInfoInputs.cache
+/Users/jadon/Documents/GitHub/physics-engine-csharp/Flat/obj/Debug/net6.0/Flat.AssemblyInfo.cs
+/Users/jadon/Documents/GitHub/physics-engine-csharp/Flat/obj/Debug/net6.0/Flat.csproj.CoreCompileInputs.cache
+/Users/jadon/Documents/GitHub/physics-engine-csharp/Flat/obj/Debug/net6.0/Flat.sourcelink.json
+/Users/jadon/Documents/GitHub/physics-engine-csharp/Flat/obj/Debug/net6.0/Flat.dll
+/Users/jadon/Documents/GitHub/physics-engine-csharp/Flat/obj/Debug/net6.0/refint/Flat.dll
+/Users/jadon/Documents/GitHub/physics-engine-csharp/Flat/obj/Debug/net6.0/Flat.pdb
+/Users/jadon/Documents/GitHub/physics-engine-csharp/Flat/obj/Debug/net6.0/ref/Flat.dll

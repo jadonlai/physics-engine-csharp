@@ -11,3 +11,16 @@
 /Users/jadon/Documents/GitHub/physics-engine/Physics/obj/Debug/net6.0/refint/Physics.dll
 /Users/jadon/Documents/GitHub/physics-engine/Physics/obj/Debug/net6.0/Physics.pdb
 /Users/jadon/Documents/GitHub/physics-engine/Physics/obj/Debug/net6.0/ref/Physics.dll
+/Users/jadon/Documents/GitHub/physics-engine-csharp/Physics/bin/Debug/net6.0/Physics.deps.json
+/Users/jadon/Documents/GitHub/physics-engine-csharp/Physics/bin/Debug/net6.0/Physics.dll
+/Users/jadon/Documents/GitHub/physics-engine-csharp/Physics/bin/Debug/net6.0/Physics.pdb
+/Users/jadon/Documents/GitHub/physics-engine-csharp/Physics/obj/Debug/net6.0/Physics.csproj.AssemblyReference.cache
+/Users/jadon/Documents/GitHub/physics-engine-csharp/Physics/obj/Debug/net6.0/Physics.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jadon/Documents/GitHub/physics-engine-csharp/Physics/obj/Debug/net6.0/Physics.AssemblyInfoInputs.cache
+/Users/jadon/Documents/GitHub/physics-engine-csharp/Physics/obj/Debug/net6.0/Physics.AssemblyInfo.cs
+/Users/jadon/Documents/GitHub/physics-engine-csharp/Physics/obj/Debug/net6.0/Physics.csproj.CoreCompileInputs.cache
+/Users/jadon/Documents/GitHub/physics-engine-csharp/Physics/obj/Debug/net6.0/Physics.sourcelink.json
+/Users/jadon/Documents/GitHub/physics-engine-csharp/Physics/obj/Debug/net6.0/Physics.dll
+/Users/jadon/Documents/GitHub/physics-engine-csharp/Physics/obj/Debug/net6.0/refint/Physics.dll
+/Users/jadon/Documents/GitHub/physics-engine-csharp/Physics/obj/Debug/net6.0/Physics.pdb
+/Users/jadon/Documents/GitHub/physics-engine-csharp/Physics/obj/Debug/net6.0/ref/Physics.dll

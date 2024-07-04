@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/jadon/Documents/GitHub/physics-engine/Physics/Physics.csproj": {}
+    "/Users/jadon/Documents/GitHub/physics-engine-csharp/Physics/Physics.csproj": {}
   },
   "projects": {
-    "/Users/jadon/Documents/GitHub/physics-engine/Physics/Physics.csproj": {
+    "/Users/jadon/Documents/GitHub/physics-engine-csharp/Physics/Physics.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jadon/Documents/GitHub/physics-engine/Physics/Physics.csproj",
+        "projectUniqueName": "/Users/jadon/Documents/GitHub/physics-engine-csharp/Physics/Physics.csproj",
         "projectName": "Physics",
-        "projectPath": "/Users/jadon/Documents/GitHub/physics-engine/Physics/Physics.csproj",
+        "projectPath": "/Users/jadon/Documents/GitHub/physics-engine-csharp/Physics/Physics.csproj",
         "packagesPath": "/Users/jadon/.nuget/packages/",
-        "outputPath": "/Users/jadon/Documents/GitHub/physics-engine/Physics/obj/",
+        "outputPath": "/Users/jadon/Documents/GitHub/physics-engine-csharp/Physics/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/jadon/.nuget/NuGet/NuGet.Config"
