@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/jadon/Documents/GitHub/physics-engine/Sim/Sim.csproj": {}
+    "/Users/jadon/Documents/GitHub/physics-engine-csharp/Sim/Sim.csproj": {}
   },
   "projects": {
-    "/Users/jadon/Documents/GitHub/physics-engine/Flat/Flat.csproj": {
+    "/Users/jadon/Documents/GitHub/physics-engine-csharp/Flat/Flat.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jadon/Documents/GitHub/physics-engine/Flat/Flat.csproj",
+        "projectUniqueName": "/Users/jadon/Documents/GitHub/physics-engine-csharp/Flat/Flat.csproj",
         "projectName": "Flat",
-        "projectPath": "/Users/jadon/Documents/GitHub/physics-engine/Flat/Flat.csproj",
+        "projectPath": "/Users/jadon/Documents/GitHub/physics-engine-csharp/Flat/Flat.csproj",
         "packagesPath": "/Users/jadon/.nuget/packages/",
-        "outputPath": "/Users/jadon/Documents/GitHub/physics-engine/Flat/obj/",
+        "outputPath": "/Users/jadon/Documents/GitHub/physics-engine-csharp/Flat/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/jadon/.nuget/NuGet/NuGet.Config"
@@ -78,14 +78,14 @@
         }
       }
     },
-    "/Users/jadon/Documents/GitHub/physics-engine/Physics/Physics.csproj": {
+    "/Users/jadon/Documents/GitHub/physics-engine-csharp/Physics/Physics.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jadon/Documents/GitHub/physics-engine/Physics/Physics.csproj",
+        "projectUniqueName": "/Users/jadon/Documents/GitHub/physics-engine-csharp/Physics/Physics.csproj",
         "projectName": "Physics",
-        "projectPath": "/Users/jadon/Documents/GitHub/physics-engine/Physics/Physics.csproj",
+        "projectPath": "/Users/jadon/Documents/GitHub/physics-engine-csharp/Physics/Physics.csproj",
         "packagesPath": "/Users/jadon/.nuget/packages/",
-        "outputPath": "/Users/jadon/Documents/GitHub/physics-engine/Physics/obj/",
+        "outputPath": "/Users/jadon/Documents/GitHub/physics-engine-csharp/Physics/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/jadon/.nuget/NuGet/NuGet.Config"
@@ -152,14 +152,14 @@
         }
       }
     },
-    "/Users/jadon/Documents/GitHub/physics-engine/Sim/Sim.csproj": {
+    "/Users/jadon/Documents/GitHub/physics-engine-csharp/Sim/Sim.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jadon/Documents/GitHub/physics-engine/Sim/Sim.csproj",
+        "projectUniqueName": "/Users/jadon/Documents/GitHub/physics-engine-csharp/Sim/Sim.csproj",
         "projectName": "Sim",
-        "projectPath": "/Users/jadon/Documents/GitHub/physics-engine/Sim/Sim.csproj",
+        "projectPath": "/Users/jadon/Documents/GitHub/physics-engine-csharp/Sim/Sim.csproj",
         "packagesPath": "/Users/jadon/.nuget/packages/",
-        "outputPath": "/Users/jadon/Documents/GitHub/physics-engine/Sim/obj/",
+        "outputPath": "/Users/jadon/Documents/GitHub/physics-engine-csharp/Sim/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/jadon/.nuget/NuGet/NuGet.Config"
@@ -174,11 +174,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/jadon/Documents/GitHub/physics-engine/Flat/Flat.csproj": {
-                "projectPath": "/Users/jadon/Documents/GitHub/physics-engine/Flat/Flat.csproj"
+              "/Users/jadon/Documents/GitHub/physics-engine-csharp/Flat/Flat.csproj": {
+                "projectPath": "/Users/jadon/Documents/GitHub/physics-engine-csharp/Flat/Flat.csproj"
               },
-              "/Users/jadon/Documents/GitHub/physics-engine/Physics/Physics.csproj": {
-                "projectPath": "/Users/jadon/Documents/GitHub/physics-engine/Physics/Physics.csproj"
+              "/Users/jadon/Documents/GitHub/physics-engine-csharp/Physics/Physics.csproj": {
+                "projectPath": "/Users/jadon/Documents/GitHub/physics-engine-csharp/Physics/Physics.csproj"
               }
             }
           }
