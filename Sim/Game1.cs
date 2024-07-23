@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Diagnostics;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
@@ -7,8 +6,8 @@ using Flat;
 using Flat.Graphics;
 using Flat.Input;
 using Physics;
-using Microsoft.Xna.Framework.Graphics.PackedVector;
-using System.Collections.Specialized;
+using System.Collections.Generic;
+using System.Text.Unicode;
 
 namespace Sim;
 
@@ -20,7 +19,7 @@ public class Game1 : Game
     private Shapes shapes;
     private Camera camera;
 
-    private Vector vectorA = new Vector(12f, 20f);
+    private List<Body> bodyList;
 
     public Game1()
     {
@@ -47,6 +46,35 @@ public class Game1 : Game
         {
             Zoom = 8
         };
+
+        camera.GetExtents(out float left, out float right, out float bottom, out float top);
+
+        bodyList = new List<Body>();
+        int bodyCount = 10;
+        const float padding = 20f;
+
+        for (int i = 0; i < bodyCount; i++) {
+            int type = RandomHelper.RandomInteger(0, 2);
+
+            Body body = null;
+
+            float x = RandomHelper.RandomSingle(left + padding, right - padding);
+            float y = RandomHelper.RandomSingle(bottom + padding, top - padding);
+
+            if (type == (int) ShapeType.Circle) {
+                if (!Body.CreateCircleBody(3f, new Vector(x, y), 2f, false, 0.5f, out body, out string errorMessage)) {
+                    throw new Exception();
+                }
+            } else if (type == (int) ShapeType.Box) {
+                if (!Body.CreateBoxBody(3f, 3f, new Vector(x, y), 2f, false, 0.5f, out body, out string errorMessage)) {
+                    throw new Exception();
+                }
+            } else {
+                throw new Exception("unknown type");
+            }
+
+            bodyList.Add(body);
+        }
 
         base.Initialize();
     }
@@ -89,12 +117,16 @@ public class Game1 : Game
         screen.Set();
         GraphicsDevice.Clear(new Color(50, 60, 70));
 
-        Vector normalized = PhysicsMath.Normalize(vectorA);
-
         shapes.Begin(camera);
-        shapes.DrawCircle(Vector2.Zero, 1f, 24, Color.Blue);
-        shapes.DrawLine(Vector2.Zero, Converter.ToVector2(vectorA), Color.White);
-        shapes.DrawLine(Vector2.Zero, Converter.ToVector2(normalized), Color.Green);
+        for (int i = 0; i < bodyList.Count; i++) {
+            Body body = bodyList[i];
+            Vector2 position = Converter.ToVector2(body.Position);
+            if (body.ShapeType is ShapeType.Circle) {
+                shapes.DrawCircle(position, body.Radius, 26, Color.White);
+            } else if (body.ShapeType is ShapeType.Box) {
+                shapes.DrawBox(position, body.Width, body.Height, Color.White);
+            }
+        }
         shapes.End();
 
         screen.Unset();

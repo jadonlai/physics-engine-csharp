@@ -4,6 +4,27 @@ namespace Physics;
 
 public class PhysicsMath
 {
+    public static float Clamp(float value, float min, float max)
+    {
+        if (min == max) {
+            return min;
+        }
+
+        if (min > max) {
+            throw new ArgumentOutOfRangeException("min is greater than the max");
+        }
+
+        if (value < min) {
+            return min;
+        }
+
+        if (value > max) {
+            return max;
+        }
+
+        return value;
+    }
+
     public static float Length(Vector v) => MathF.Sqrt(v.X * v.X + v.Y * v.Y);
 
     public static float Distance(Vector a, Vector b)
